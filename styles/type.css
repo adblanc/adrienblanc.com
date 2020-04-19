@@ -1,0 +1,38 @@
+.txt-type {
+  display: block;
+}
+
+.txt-type > .txt::after {
+  content: "";
+  width: 1px;
+  height: 5%;
+  margin-left: 2px;
+  border-right: 2px solid white;
+  animation: blink 1s infinite ease;
+}
+
+.txt-type {
+  display: block;
+  height: 2rem;
+  text-align: center;
+  margin: auto;
+  font-size: 2rem;
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
