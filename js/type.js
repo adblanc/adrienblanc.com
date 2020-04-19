@@ -1,3 +1,13 @@
+const TYPING_SPEED_MIN = 150;
+const TYPING_SPEED_MAX = 250;
+
+function randomTypingSpeed() {
+  return (
+    Math.floor(Math.random() * (TYPING_SPEED_MAX - TYPING_SPEED_MIN)) +
+    TYPING_SPEED_MIN
+  );
+}
+
 class TypeWriter {
   constructor(txtElement, words, delay, waitTime = 3000, initialSentence = "") {
     this.txtElement = txtElement;
@@ -18,8 +28,8 @@ class TypeWriter {
 
     if (this.txt === text) {
       this.txt = "";
-      setTimeout(() => this.type(), 300);
-    } else setTimeout(() => this.typeInitialSentence(), 300);
+      setTimeout(() => this.type(), randomTypingSpeed());
+    } else setTimeout(() => this.typeInitialSentence(), randomTypingSpeed());
   };
 
   type = () => {
@@ -35,7 +45,7 @@ class TypeWriter {
 
     this.txtElement.innerHTML = `<span class="txt">${this.initialSentence}${this.txt}</span>`;
 
-    let typeSpeed = 250;
+    let typeSpeed = randomTypingSpeed();
 
     if (this.isDeleting) typeSpeed /= 2;
 
@@ -46,7 +56,7 @@ class TypeWriter {
       this.isDeleting = false;
       this.wordIndex++;
 
-      typeSpeed = 500;
+      typeSpeed = randomTypingSpeed();
     }
 
     setTimeout(() => this.type(), typeSpeed);
