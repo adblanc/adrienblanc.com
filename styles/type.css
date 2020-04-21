@@ -1,5 +1,6 @@
 .txt-type {
   display: block;
+  color: white;
 }
 
 .txt-type > .txt::after {
@@ -13,10 +14,9 @@
 
 .txt-type {
   display: block;
-  height: 2rem;
   text-align: center;
   margin: auto;
-  font-size: 2rem;
+  font-size: 2.5vw;
 }
 
 @keyframes apparition {
