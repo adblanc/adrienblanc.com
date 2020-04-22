@@ -176,3 +176,8 @@ a:active {
     opacity: 1;
   }
 }
+
+main h1 {
+  text-align: center;
+  vertical-align: middle;
+}
