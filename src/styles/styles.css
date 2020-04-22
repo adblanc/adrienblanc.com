@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+}
+
+.content-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+main,
+footer {
+  flex: 1;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+main {
+  padding-top: 5%;
+}
+
+header {
+  flex: 0.75;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.curved {
+  background-color: black;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.curved svg.wave-svg {
+  display: block;
+}
+
+.curved.upper {
+  background-color: #fff;
+}
+
+.svg-names {
+  height: 100%;
+  width: 40%;
+  margin: auto;
+}
+
+#logo-1 {
+  margin-right: 1.5vw;
+}
+
+#logo-2 {
+  margin-left: 1.5vw;
+}
+
+.bottom-links {
+  height: 50%;
+  width: 25%;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon-container {
+  width: 50%;
+  height: 50%;
+  position: relative;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+}
+
+.icon-container svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+.txt-type > .txt::after {
+  content: "";
+  width: 1px;
+  height: 5%;
+  margin-left: 2px;
+  border-right: 2px solid white;
+  animation: blink 1s infinite ease;
+}
+
+.txt-type {
+  display: block;
+  text-align: center;
+  height: 6vw;
+  font-size: 4.5vw;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .txt-type {
+    height: 4vw;
+    font-size: 3vw;
+  }
+  .icon-container {
+    width: 40%;
+    height: 40%;
+    position: relative;
+  }
+}
+
+@media (min-width: 1200px) {
+  .icon-container {
+    width: 30%;
+    height: 30%;
+    position: relative;
+  }
+  .txt-type {
+    margin-top: 5%;
+  }
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main h1 {
+  text-align: center;
+  vertical-align: middle;
+}
