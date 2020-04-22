@@ -3,16 +3,17 @@ import Head from "next/head";
 import Header from "./Header";
 import UpperCurve from "./UpperCurve";
 import LowerCurve from "./LowerCurve";
-import Footer from "./Footer";
 
 type Props = {
   title?: string;
   description: string;
+  displayHeader?: boolean;
 };
 
 const Layout: React.FunctionComponent<Props> = ({
   children,
   description,
+  displayHeader,
   title = "This is the default title",
 }) => (
   <>
@@ -25,9 +26,8 @@ const Layout: React.FunctionComponent<Props> = ({
     </Head>
     <UpperCurve />
     <div className="content-container">
-      <Header />
+      {displayHeader && <Header />}
       <main>{children}</main>
-      <Footer />
     </div>
     <LowerCurve />
   </>

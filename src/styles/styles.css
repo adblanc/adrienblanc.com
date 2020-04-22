@@ -25,7 +25,6 @@ footer {
   flex: 1;
   background-color: black;
   color: white;
-  text-align: center;
 }
 
 main {
@@ -60,6 +59,10 @@ header {
   height: 100%;
   width: 40%;
   margin: auto;
+}
+
+.logos {
+  text-align: center;
 }
 
 #logo-1 {

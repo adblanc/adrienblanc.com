@@ -5,10 +5,11 @@ export interface ProjectProps {
   title: string;
   backgroundImage?: any;
   description: string;
+  slug: string;
+  category: "42" | "personal";
 }
 
 export default function Project({ tags, title }: ProjectProps) {
-  console.log(tags, title);
   return (
     <div className={styles.container}>
       <div className={styles.tagsContainer}>
