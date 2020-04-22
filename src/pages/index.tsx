@@ -12,8 +12,6 @@ export default () => {
     <Layout
       title="Adrien Blanc | Portfolio"
       description="Hi, my name is Adrien Blanc and I'm a fullstack developer. I mostly use Typescript and my preferred technologies are React Native, React, Node.js and GraphQL."
-    >
-      <h1>Some of my projects</h1>
-    </Layout>
+    ></Layout>
   );
 };
