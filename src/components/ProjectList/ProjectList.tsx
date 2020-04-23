@@ -9,23 +9,23 @@ interface Props {
 
 export default function ProjectList({ show42, showPersonal }: Props) {
   return (
-    <li className={styles.list}>
+    <ul className={styles.list}>
       {show42 !== false &&
         get42Projects().map((p) => (
-          <ul key={p.slug}>
+          <li className={styles.listItem} key={p.slug}>
             <Link href="/[category]/[name]" as={p.slug}>
-              <a>{p.title}</a>
+              <a className={styles.anchor}>{p.title}</a>
             </Link>
-          </ul>
+          </li>
         ))}
       {showPersonal !== false &&
         getPersonalProjects().map((p) => (
-          <ul key={p.slug}>
+          <li className={styles.listItem} key={p.slug}>
             <Link href="/[category]/[name]" as={p.slug}>
-              <a>{p.title}</a>
+              <a className={styles.anchor}>{p.title}</a>
             </Link>
-          </ul>
+          </li>
         ))}
-    </li>
+    </ul>
   );
 }

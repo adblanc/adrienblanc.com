@@ -1,4 +1,35 @@
 .text {
-  font-size: 3.25vw;
+  font-size: 4vw;
   text-align: start;
+}
+.container {
+  padding-left: 5%;
+}
+
+.anchor,
+.anchor:link,
+.anchor:visited,
+.anchor:hover,
+.anchor:active {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+}
+
+@media (min-width: 768px) {
+  .text {
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .text {
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text {
+    font-size: 2vw;
+  }
 }

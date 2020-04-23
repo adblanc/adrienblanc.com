@@ -1,19 +1,24 @@
 import Layout from "../../../components/Layout";
-import { ProjectProps } from "../../../components/Project/Project";
 import BreadCrumb from "../../../components/Breadcrumb/Breadcrumb";
-import { PROJECTS } from "../../../constants";
+import { PROJECTS, ProjectProps } from "../../../constants";
 import { GetStaticProps } from "next";
+import TagList from "../../../components/TagList/TagList";
 
-export default ({ title, description }: ProjectProps) => {
+export default ({ title, description, category, tags }: ProjectProps) => {
   return (
-    <Layout title={`${title} 42 | Blanc Adrien`} description={description}>
-      <div className="nav-container">
-        <BreadCrumb />
+    <Layout
+      title={`${title} ${category === "42" ? "42" : ""} | Blanc Adrien`}
+      description={description}
+    >
+      <BreadCrumb />
+      <div>
+        <h1 className="title">{title}</h1>
+        <TagList tags={tags.map((tag) => ({ href: tag, label: tag }))} />
       </div>
       <style jsx>
         {`
-          .nav-container {
-            padding-left: 5%;
+          .title {
+            margin: 5%;
           }
         `}
       </style>

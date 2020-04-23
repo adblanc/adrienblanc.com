@@ -1,9 +1,15 @@
-import { ProjectProps } from "../components/Project/Project";
+export interface ProjectProps {
+  title: string;
+  tags: string[];
+  description: string;
+  slug: string;
+  category: string;
+}
 
 export const PROJECTS: ProjectProps[] = [
   {
     title: "ft_containers",
-    tags: ["C++", "Data structures", "42"],
+    tags: ["C++", "Data structures"],
     description:
       "Implementation of the various container types of the C++ standard template library",
     slug: "/42/ft-containers",
@@ -11,7 +17,7 @@ export const PROJECTS: ProjectProps[] = [
   },
   {
     title: "minishell",
-    tags: ["C", "UNIX", "42"],
+    tags: ["C", "UNIX"],
     description:
       "Implementation of a shell with some built-in commands and the possibility to execute programs, use environment variables, redirections, pipes and more...",
     slug: "/42/minishell",
@@ -19,7 +25,7 @@ export const PROJECTS: ProjectProps[] = [
   },
   {
     title: "philosophers",
-    tags: ["C", "Multithreading", "42"],
+    tags: ["C", "Multithreading"],
     description:
       "Three different implementation of the famous dining philosophers problem using mutex, semaphores and processes.",
     slug: "/42/philosophers",
@@ -27,7 +33,7 @@ export const PROJECTS: ProjectProps[] = [
   },
   {
     title: "libasm",
-    tags: ["Assembly", "42"],
+    tags: ["Assembly"],
     description:
       "An introduction to assembly language by making a little library of functions. As assembly language isn't portable, this version is based on macOS standards.",
     slug: "/42/libasm",
@@ -35,7 +41,7 @@ export const PROJECTS: ProjectProps[] = [
   },
   {
     title: "ft_services",
-    tags: ["Kubernetes", "Clustering", "Docker", "42"],
+    tags: ["Kubernetes", "Clustering", "Docker"],
     description:
       "Infrastructure of different services using Kubernetes. It contains a nginx and ftps server, wordpress, mysql, phpmyadmin, grafana, influxdb all based on alpine.",
     slug: "/42/ft-services",
@@ -43,7 +49,7 @@ export const PROJECTS: ProjectProps[] = [
   },
   {
     title: "cub3D",
-    tags: ["C", "Raycasting", "42"],
+    tags: ["C", "Raycasting"],
     description:
       "Implementation of a raycasting algorithm in C to recreate a wolf3D like game with textures, sprites using the minilibX, a minimalistic graphic library of 42.",
     slug: "/42/cub3D",

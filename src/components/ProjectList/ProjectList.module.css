@@ -1,3 +1,18 @@
 .list {
   text-align: center;
+  list-style: none;
+}
+
+.listItem {
+  margin: 2%;
+}
+
+.anchor,
+.anchor:link,
+.anchor:visited,
+.anchor:hover,
+.anchor:active {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
 }

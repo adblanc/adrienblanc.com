@@ -34,7 +34,7 @@ main {
 header {
   flex: 0.75;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -63,6 +63,7 @@ header {
 
 .logos {
   text-align: center;
+  margin-bottom: 10%;
 }
 
 #logo-1 {
@@ -86,16 +87,6 @@ header {
   width: 50%;
   height: 50%;
   position: relative;
-}
-
-a,
-a:link,
-a:visited,
-a:hover,
-a:active {
-  color: inherit;
-  text-decoration: inherit;
-  font-weight: inherit;
 }
 
 .icon-container svg {
@@ -138,6 +129,9 @@ a:active {
 }
 
 @media (min-width: 768px) {
+  .logos {
+    margin-bottom: 8%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -150,6 +144,9 @@ a:active {
     height: 40%;
     position: relative;
   }
+  .logos {
+    margin-bottom: 6%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -160,6 +157,9 @@ a:active {
   }
   .txt-type {
     margin-top: 5%;
+  }
+  .logos {
+    margin-bottom: 4%;
   }
 }
 

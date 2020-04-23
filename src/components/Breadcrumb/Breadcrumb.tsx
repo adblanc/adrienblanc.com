@@ -55,14 +55,20 @@ export default function BreadCrumb() {
   const paths = getPathsFromQuery();
 
   return (
-    <span className={styles.text}>
-      {paths.map((path: string) => {
-        return (
-          <Link key={path} href={getHrefPath(path)} as={getAsPath(paths, path)}>
-            <a>{`/${path}`}</a>
-          </Link>
-        );
-      })}
-    </span>
+    <div className={styles.container}>
+      <span className={styles.text}>
+        {paths.map((path: string) => {
+          return (
+            <Link
+              key={path}
+              href={getHrefPath(path)}
+              as={getAsPath(paths, path)}
+            >
+              <a className={styles.anchor}>{`/${path}`}</a>
+            </Link>
+          );
+        })}
+      </span>
+    </div>
   );
 }
