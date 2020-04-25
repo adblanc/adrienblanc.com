@@ -33,7 +33,7 @@ export const PROJECTS: ProjectProps[] = [
   },
   {
     title: "libasm",
-    tags: ["Assembly"],
+    tags: ["Assembly language"],
     description:
       "An introduction to assembly language by making a little library of functions. As assembly language isn't portable, this version is based on macOS standards.",
     slug: "/42/libasm",
