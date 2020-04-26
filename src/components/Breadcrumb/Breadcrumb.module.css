@@ -3,7 +3,9 @@
   text-align: start;
 }
 .container {
-  padding-left: 5%;
+  margin-left: 5%;
+  padding: 1%;
+  width: fit-content;
 }
 
 .anchor,
@@ -14,6 +16,22 @@
   color: inherit;
   text-decoration: inherit;
   font-weight: inherit;
+}
+
+.anchor::before {
+  content: "/";
+}
+
+.lastAnchor {
+  color: white;
+  font-weight: inherit;
+  text-decoration: underline;
+  text-decoration-color: white;
+  cursor: pointer;
+}
+
+.lastAnchor::before {
+  content: "/";
 }
 
 @media (min-width: 768px) {

@@ -3,6 +3,7 @@ export default function UpperCurve() {
     <div className="curved upper">
       <svg
         className="wave-svg"
+        preserveAspectRatio="none"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 319"
       >

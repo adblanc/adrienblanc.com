@@ -4,14 +4,22 @@
   box-sizing: border-box;
 }
 
+::-moz-selection {
+  background-color: #6b6b6b;
+  color: white;
+}
+
+::selection {
+  color: white;
+  background-color: #6b6b6b;
+}
+
 html,
 body,
 #__next {
   height: 100%;
   width: 100%;
   font-size: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .content-container {
@@ -48,6 +56,12 @@ header {
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
+  height: 15%;
+  width: 100%;
+}
+
+.curved svg {
+  width: 100%;
 }
 
 .curved.upper {
@@ -135,19 +149,9 @@ header {
     height: 4vw;
     font-size: 3vw;
   }
-  .icon-container {
-    width: 40%;
-    height: 40%;
-    position: relative;
-  }
 }
 
 @media (min-width: 1200px) {
-  .icon-container {
-    width: 30%;
-    height: 30%;
-    position: relative;
-  }
   .logos {
     text-align: center;
     width: 70%;

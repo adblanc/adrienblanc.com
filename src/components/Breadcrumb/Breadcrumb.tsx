@@ -57,14 +57,18 @@ export default function BreadCrumb() {
   return (
     <div className={styles.container}>
       <span className={styles.text}>
-        {paths.map((path: string) => {
+        {paths.map((path: string, i: number) => {
+          const last = i === paths.length - 1;
+          const style = last ? styles.lastAnchor : styles.anchor;
+
+          if (last) return <span className={style}>{path}</span>;
           return (
             <Link
               key={path}
               href={getHrefPath(path)}
               as={getAsPath(paths, path)}
             >
-              <a className={styles.anchor}>{`/${path}`}</a>
+              <a className={style}>{path}</a>
             </Link>
           );
         })}
