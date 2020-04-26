@@ -9,6 +9,11 @@
   color: white;
 }
 
+::-webkit-selection {
+  background-color: #6b6b6b;
+  color: white;
+}
+
 ::selection {
   color: white;
   background-color: #6b6b6b;
