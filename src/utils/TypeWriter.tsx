@@ -1,5 +1,5 @@
-const TYPING_SPEED_MIN = 150;
-const TYPING_SPEED_MAX = 250;
+const TYPING_SPEED_MIN = 100;
+const TYPING_SPEED_MAX = 200;
 
 function randomTypingSpeed() {
   return (

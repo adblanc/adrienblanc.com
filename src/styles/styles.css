@@ -10,11 +10,14 @@ body,
   height: 100%;
   width: 100%;
   font-size: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .content-container {
   height: 100%;
   width: 100%;
+  background-color: black;
   display: flex;
   flex-direction: column;
 }
@@ -32,22 +35,19 @@ main {
 }
 
 header {
-  flex: 0.75;
+  flex: 0.25;
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
 .curved {
   background-color: black;
   position: relative;
+  display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-}
-
-.curved svg.wave-svg {
-  display: block;
 }
 
 .curved.upper {
@@ -56,13 +56,12 @@ header {
 
 .svg-names {
   height: 100%;
-  width: 40%;
-  margin: auto;
+  width: 33%;
 }
 
 .logos {
   text-align: center;
-  margin-bottom: 10%;
+  width: 100%;
 }
 
 #logo-1 {
@@ -122,15 +121,13 @@ header {
 
 .txt-type {
   display: block;
+  padding: 5%;
   text-align: center;
   height: 6vw;
   font-size: 4.5vw;
 }
 
 @media (min-width: 768px) {
-  .logos {
-    margin-bottom: 8%;
-  }
 }
 
 @media (min-width: 992px) {
@@ -143,9 +140,6 @@ header {
     height: 40%;
     position: relative;
   }
-  .logos {
-    margin-bottom: 6%;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -154,11 +148,9 @@ header {
     height: 30%;
     position: relative;
   }
-  .txt-type {
-    margin-top: 5%;
-  }
   .logos {
-    margin-bottom: 4%;
+    text-align: center;
+    width: 70%;
   }
 }
 
