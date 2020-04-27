@@ -2,22 +2,21 @@ import Layout from "../../components/Layout";
 import BreadCrumb from "../../components/Breadcrumb/Breadcrumb";
 import ProjectList from "../../components/ProjectList/ProjectList";
 import { GetStaticProps } from "next";
+import { getAllProjects } from "../../utils/getProjects";
 
 interface Props {
   category: string;
+  projects: any[];
 }
 
-export default ({ category }: Props) => (
+export default ({ category, projects }: Props) => (
   <Layout
     title="Adrien Blanc | Portfolio"
     description={`List of my ${category} projects.`}
   >
     <BreadCrumb />
     <h1>Some of my {category} projects</h1>
-    <ProjectList
-      showPersonal={category === "personal"}
-      show42={category === "42"}
-    />
+    <ProjectList {...{ projects }} />
   </Layout>
 );
 
@@ -37,6 +36,9 @@ export const getStaticProps: GetStaticProps<{}, { category: string }> = async ({
   return {
     props: {
       category: params?.category || "",
+      projects: (await getAllProjects()).filter((p) =>
+        p.slug.includes(params!.category)
+      ),
     },
   };
 };
