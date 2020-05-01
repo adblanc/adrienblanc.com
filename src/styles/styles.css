@@ -43,10 +43,6 @@ footer {
   color: white;
 }
 
-main {
-  padding-top: 5%;
-}
-
 header {
   flex: 0.25;
   display: flex;
