@@ -1,5 +1,5 @@
 import Particle from "./Particle";
-import { randomIntFromRange, randomColor } from "../utils";
+import { randomIntFromRange, randomColor, getRandomArbitrary } from "../utils";
 
 interface IGalaxy {
   canvasId: string;
@@ -50,8 +50,11 @@ export default class Galaxy {
           y: this.canvas.height / 2,
           radius: randomIntFromRange(0.5, 1.5),
           color: randomColor(this.galaxy.colors),
-          velocity: 0.0075,
-          distanceFromCenter: randomIntFromRange(50, 120),
+          velocity: getRandomArbitrary(0.0035, 0.0085),
+          distanceFromCenter: randomIntFromRange(
+            50,
+            Math.min(this.canvas.width, this.canvas.height) / 2
+          ),
         })
       );
     }
@@ -60,7 +63,7 @@ export default class Galaxy {
 
   animate = () => {
     requestAnimationFrame(this.animate);
-    this.c.fillStyle = "rgba(0, 0, 0, 0.15)";
+    this.c.fillStyle = "rgba(0, 0, 0, 0.08)";
     this.c.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
     this.particles.forEach((particle) => {
