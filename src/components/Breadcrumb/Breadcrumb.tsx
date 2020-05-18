@@ -61,7 +61,12 @@ export default function BreadCrumb() {
           const last = i === paths.length - 1;
           const style = last ? styles.lastAnchor : styles.anchor;
 
-          if (last) return <span className={style}>{path}</span>;
+          if (last)
+            return (
+              <span key={path} className={style}>
+                {path}
+              </span>
+            );
           return (
             <Link
               key={path}

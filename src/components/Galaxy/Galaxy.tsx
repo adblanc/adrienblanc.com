@@ -18,13 +18,27 @@ export default function GalaxyComponent({ id }: Props) {
     });
     new Graph({
       nodes: [
-        { color: "white", layer: 0, text: "42", radians: 1, velocity: 0.00005 },
+        {
+          color: "white",
+          layer: 0,
+          text: "42",
+          radians: 1,
+          velocity: 0.00005,
+          x: 0,
+          y: 0,
+          url: "/[category]",
+          as: "/42",
+        },
         {
           color: "white",
           layer: 1,
           text: "minishell",
           radians: 0.5,
           velocity: 0.0065,
+          x: 0,
+          y: 0,
+          url: "/[category]/[name]",
+          as: "/42/minishell",
         },
         {
           color: "white",
@@ -32,6 +46,10 @@ export default function GalaxyComponent({ id }: Props) {
           text: "cub3D",
           radians: 2,
           velocity: 0.0075,
+          x: 0,
+          y: 0,
+          url: "/[category]/[name]",
+          as: "/42/cub3D",
         },
       ],
       containerId: `galaxy-container-${id}`,

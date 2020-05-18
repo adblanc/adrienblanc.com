@@ -9,7 +9,7 @@ export default function TagList({ tags }: TagListProps) {
   return (
     <li className={styles.tagList}>
       {tags.map((tag) => (
-        <Tag {...tag} />
+        <Tag key={tag.label} {...tag} />
       ))}
     </li>
   );
