@@ -1,8 +1,9 @@
+import styles from "./Curves.module.css";
+
 export default function LowerCurve() {
   return (
-    <div className="curved">
+    <div className={styles.curved}>
       <svg
-        className="wave-svg"
         preserveAspectRatio="none"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 319"

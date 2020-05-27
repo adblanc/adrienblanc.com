@@ -1,8 +1,9 @@
+import styles from "./Curves.module.css";
+
 export default function UpperCurve() {
   return (
-    <div className="curved upper">
+    <div className={styles.curvedUpper}>
       <svg
-        className="wave-svg"
         preserveAspectRatio="none"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 319"

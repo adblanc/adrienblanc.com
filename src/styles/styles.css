@@ -35,56 +35,11 @@ body,
   flex-direction: column;
 }
 
-header,
 main,
 footer {
   flex: 1;
   background-color: black;
   color: white;
-}
-
-header {
-  flex: 0.25;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.curved {
-  background-color: black;
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-  height: 15%;
-  width: 100%;
-}
-
-.curved svg {
-  width: 100%;
-}
-
-.curved.upper {
-  background-color: #fff;
-}
-
-.svg-names {
-  height: 100%;
-  width: 33%;
-}
-
-.logos {
-  text-align: center;
-  width: 100%;
-}
-
-#logo-1 {
-  margin-right: 1.5vw;
-}
-
-#logo-2 {
-  margin-left: 1.5vw;
 }
 
 .bottom-links {
@@ -116,41 +71,16 @@ header {
   }
 }
 
-.txt-type > .txt::after {
-  content: "";
-  width: 1px;
-  height: 5%;
-  margin-left: 2px;
-  border-right: 2px solid white;
-  animation: blink 1s infinite ease;
-}
-
-.txt-type {
-  display: block;
-  padding: 5%;
-  text-align: center;
-  height: 6vw;
-  font-size: 4.5vw;
-}
-
 @media (min-width: 768px) {
 }
 
 @media (min-width: 992px) {
-  .txt-type {
-    height: 4vw;
-    font-size: 3vw;
-  }
   .icon-container {
     width: 3.5%;
   }
 }
 
 @media (min-width: 1200px) {
-  .logos {
-    text-align: center;
-    width: 70%;
-  }
   .icon-container {
     width: 2.5%;
   }

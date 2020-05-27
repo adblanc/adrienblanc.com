@@ -1,0 +1,33 @@
+.curved {
+  background-color: black;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  height: 15%;
+  width: 100%;
+}
+
+.curved svg {
+  width: 100%;
+}
+
+.curvedUpper {
+  background-color: black;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  height: 15%;
+  width: 100%;
+}
+
+.curvedUpper svg {
+  width: 100%;
+}
+
+.curvedUpper {
+  background-color: #fff;
+}

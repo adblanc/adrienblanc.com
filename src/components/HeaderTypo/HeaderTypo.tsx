@@ -1,10 +1,12 @@
-export default function Header() {
+import styles from "./HeaderTypo.module.css";
+
+export default function HeaderTypo() {
   return (
-    <header>
-      <div className="logos">
+    <header className={styles.header}>
+      <div className={styles.logos}>
         <svg
           id="logo-1"
-          className="svg-names"
+          className={styles.svgNameLeft}
           viewBox="0 0 448 109"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +45,7 @@ export default function Header() {
 
         <svg
           id="logo-2"
-          className="svg-names"
+          className={styles.svgNameRight}
           viewBox="0 0 488 107"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +89,8 @@ export default function Header() {
         </svg>
       </div>
       <span
-        className="txt-type"
+        className={styles.txtType}
+        id="txtType"
         data-text-to-not-remove="Hi, I'm a"
         data-wait="2000"
         data-words='[" 42 student", " fullstack developer", "vailable for freelance work", " typescript enthusiast"]'

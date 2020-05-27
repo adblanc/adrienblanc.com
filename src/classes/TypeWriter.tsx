@@ -85,7 +85,7 @@ export default class TypeWriter {
 }
 
 export const initWriter = () => {
-  const txtElement = document.querySelector(".txt-type") as Element;
+  const txtElement = document.querySelector("#txtType") as Element;
 
   const words = JSON.parse(txtElement.getAttribute("data-words") as string);
   const initialSentence = txtElement.getAttribute(

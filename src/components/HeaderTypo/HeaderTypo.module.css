@@ -1,0 +1,54 @@
+.header {
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.svgNameLeft {
+  height: 100%;
+  width: 33%;
+  margin-right: 1.5vw;
+}
+
+.svgNameRight {
+  height: 100%;
+  width: 33%;
+  margin-left: 1.5vw;
+}
+
+.logos {
+  text-align: center;
+  width: 100%;
+}
+
+.txtType > .txt::after {
+  content: "";
+  width: 1px;
+  height: 5%;
+  margin-left: 2px;
+  border-right: 2px solid white;
+  animation: blink 1s infinite ease;
+}
+
+.txtType {
+  display: block;
+  padding: 5%;
+  text-align: center;
+  height: 6vw;
+  font-size: 4.5vw;
+}
+
+@media (min-width: 992px) {
+  .txtType {
+    height: 4vw;
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logos {
+    width: 70%;
+  }
+}

@@ -4,6 +4,11 @@ import { useEffect } from "react";
 import { launchSvgAnimation } from "../utils/animateSVG";
 import { getAllProjects } from "../utils/getProjects";
 import GalaxyComponent from "../components/Galaxy/Galaxy";
+import HeaderTypo from "../components/HeaderTypo/HeaderTypo";
+import ScrollContainer from "../components/ScrollContainer/ScrollContainer";
+import UpperCurve from "../components/Curves/UpperCurve";
+import LowerCurve from "../components/Curves/LowerCurve";
+import Footer from "../components/Footer";
 
 interface Props {
   projects: any[];
@@ -15,14 +20,34 @@ export default ({}: Props) => {
     initWriter();
   }, []);
   return (
-    <Layout
-      displayHeader
-      title="Adrien Blanc | Portfolio"
-      description="Hi, my name is Adrien Blanc and I'm a fullstack developer. I mostly use Typescript and my preferred technologies are React Native, React, Node.js and GraphQL."
-    >
-      {/* <ProjectList projects={projects} /> */}
-      <GalaxyComponent id="42" />
-    </Layout>
+    <ScrollContainer>
+      <Layout
+        title="Adrien Blanc | Portfolio"
+        description="Hi, my name is Adrien Blanc and I'm a fullstack developer. I mostly use Typescript and my preferred technologies are React Native, React, Node.js and GraphQL."
+        noUpperCurve
+        noLowerCurve
+      >
+        <div className="scroll-fix">
+          <UpperCurve />
+          <HeaderTypo />
+        </div>
+        <div className="scroll-fix">
+          <GalaxyComponent id="42" />
+        </div>
+        <div className="scroll-fix">
+          <Footer />
+          <LowerCurve />
+        </div>
+      </Layout>
+      <style jsx>
+        {`
+          .scroll-fix {
+            scroll-snap-align: center;
+            height: 100vh;
+          }
+        `}
+      </style>
+    </ScrollContainer>
   );
 };
 
