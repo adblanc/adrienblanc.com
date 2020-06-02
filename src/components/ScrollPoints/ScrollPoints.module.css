@@ -1,0 +1,32 @@
+.controls {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  right: 1em;
+  bottom: 50%;
+  left: 0;
+}
+
+.controlsDot {
+  margin: 0.5em;
+  width: 0.85em;
+  height: 0.85em;
+  border-radius: 50%;
+  outline: none;
+  background-color: #fff;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.controlsDot:hover,
+.controlsDot:focus {
+  opacity: 1;
+}
+
+.activeDot {
+  composes: controlsDot;
+  opacity: 1;
+}
