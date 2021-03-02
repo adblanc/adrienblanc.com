@@ -3,6 +3,7 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
     "./posts/**/*.mdx",
+    "./projects/**/*.mdx",
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {

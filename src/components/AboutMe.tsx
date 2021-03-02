@@ -19,7 +19,7 @@ export interface AboutMeProps {
 const AboutMe: React.FC<AboutMeProps> = ({ filterProjects }) => {
   return (
     <section className="max-w-2xl px-4 mx-auto text-gray-800">
-      <p className="mb-12 text-xl leading-relaxed">
+      <div className="mb-12 text-xl leading-relaxed">
         <span className="leading-normal font-bold text-2xl">
           Hi, my name is <h1 className="inline-block">Adrien</h1>
           <span aria-hidden> 🙂 </span>
@@ -33,7 +33,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ filterProjects }) => {
         <Link href="https://reactnative.dev/">React Native</Link> and{" "}
         <Link href="https://graphql.org/">GraphQL</Link>, everything written in{" "}
         <Link href="https://www.typescriptlang.org/">Typescript</Link>.
-      </p>
+      </div>
     </section>
   );
 };

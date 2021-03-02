@@ -15,7 +15,19 @@ interface Props {
 const Project = ({ project, source }: Props) => {
   const content = hydrate(source);
 
-  return <div>{content}</div>;
+  return (
+    <div className="flex items-center justify-center p-32">
+      <article className="prose lg:prose-lg">
+        <div>
+          <h1 className="text-center">{project.title}</h1>
+          <p className="text-center text-gray-500">
+            {project.tags.join(" | ")}
+          </p>
+        </div>
+        <div>{content}</div>
+      </article>
+    </div>
+  );
 };
 
 export default Project;
