@@ -18,14 +18,14 @@ const Project = ({ project, source }: Props) => {
   const content = hydrate(source);
 
   return (
-    <Layout>
+    <>
       <NextSeo
         title={`${project.title} ${
           project.category === "42" ? "(42)" : ""
         } | Adrien Blanc`}
         description={project.description}
       />
-      <div className="flex items-center justify-center p-32">
+      <div className="flex items-center justify-center">
         <article className="prose lg:prose-lg">
           <div>
             <h1 className="text-center">{project.title}</h1>
@@ -36,7 +36,7 @@ const Project = ({ project, source }: Props) => {
           <div>{content}</div>
         </article>
       </div>
-    </Layout>
+    </>
   );
 };
 

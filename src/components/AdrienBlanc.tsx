@@ -1,18 +1,16 @@
 import { useEffect } from "react";
 import { animateSgv } from "../utils/svg";
 
+const idLeft = "adrien";
+const idRight = "blanc";
+
 const getDelayByLength = (length: number) => {
   const totalDuration = 3000;
 
   return totalDuration / length / 1000;
 };
 
-export interface AdrienBlancProps {
-  idLeft: string;
-  idRight: string;
-}
-
-const AdrienBlanc: React.SFC<AdrienBlancProps> = ({ idLeft, idRight }) => {
+const AdrienBlanc: React.FC<unknown> = () => {
   useEffect(() => {
     const logoOneLength = document.getElementById(idLeft)!.childElementCount;
     const logoTwoLength = document.getElementById(idRight)!.childElementCount;
@@ -24,7 +22,7 @@ const AdrienBlanc: React.SFC<AdrienBlancProps> = ({ idLeft, idRight }) => {
   const strokeColor = "#2d3748";
 
   return (
-    <div className="text-center w-full flex justify-center p-4">
+    <div className="text-center w-full flex justify-center p-8">
       <svg
         id={idLeft}
         className="mr-3 w-1/2 sm:w-1/3 lg:w-1/4 xl:w-1/5"
