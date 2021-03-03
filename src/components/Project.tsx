@@ -17,7 +17,7 @@ const Project: React.FC<ProjectProps> = ({
 }) => {
   return (
     <div className="bg-gray-300 border rounded-lg overflow-hidden group max-w-xs shadow-sm hover:shadow-lg transition-shadow ease-in-out duration-300">
-      <Link href={slug}>
+      <Link href={`/${slug}`}>
         <a>
           <div className="relative overflow-hidden">
             <img
