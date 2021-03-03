@@ -6,12 +6,38 @@ tags: ["Kubernetes", "Clustering", "Docker"]
 img: /projects/ft-services/logo.png
 ---
 
-## h2 Heading
+### About the project
 
-### h3 Heading
+This project is about clusturing docker applications and deploying it with [Kubernetes](https://kubernetes.io).
+I had to set up a multi-service cluster including:
 
-#### h4 Heading
+- A Kubernetes web dashboard
+- A [Load Balancer](<https://en.wikipedia.org/wiki/Load_balancing_(computing)>)
+- A [WordPress](https://wordpress.com/) website with a [MySQL](https://www.mysql.com/) database.
+- A [phpMyAdmin](https://www.phpmyadmin.net/)
+- A [nginx](https://www.nginx.com/) server answering to both http and https.
+- A [FTPS](https://en.wikipedia.org/wiki/FTPS) server.
+- A [Grafana](https://grafana.com/) platform connected to an [InfluxDB](https://www.influxdata.com/) database.
 
-##### h5 Heading
+It looks something like this:
 
-###### h6 Heading
+![ft_services schema](/projects/ft-services/schema.png)
+
+### What I learned
+
+#### Kubernetes
+
+It was my first experience with Kubernetes, I had never heard of it. <br />
+I learned to manage different services inside the same cluster and make them work nicely together. <br />
+I find K8s to have a **steep learning curve**, there is a bunch of different concepts to learn such as pods, services, volumes, deployments which implies to read a large amount of documentation.
+
+#### yaml
+
+I had always used [JSON](https://en.wikipedia.org/wiki/JSON) but this project introduced me to [YAML](https://en.wikipedia.org/wiki/YAML). **I hate it**.<br />
+JSON doesn't care if you have an extra or missing tabulation, YAML do. <br />
+Having 15+ yaml files in this project, I got frustrated **a lot**.
+
+### Notes
+
+I can't imagine myself as a **system administrator** because it doesn't fullfil me. <br />
+However, I'm grateful for having the opportunity to work on this project as it developed my knowledge and my skills in a domain that even though I'm not a fan of, is still important.
