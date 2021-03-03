@@ -21,7 +21,7 @@ const Project = ({ project, source }: Props) => {
     <Layout>
       <NextSeo
         title={`${project.title} ${
-          project.category === "42" ? " (42) " : ""
+          project.category === "42" ? "(42)" : ""
         } | Adrien Blanc`}
         description={project.description}
       />
