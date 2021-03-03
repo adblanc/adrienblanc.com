@@ -6,13 +6,11 @@ import SocialsLink from "../components/SocialsLink";
 import AboutMe from "../components/AboutMe";
 import { useState } from "react";
 import ProjectFilters from "../components/ProjetFilters";
+import { NextSeo } from "next-seo";
 
 interface Props {
   allProjects: IProject[];
 }
-
-const SEO_DESCRIPTION = `Software engineer based in Paris and currently studying at 42.
-My favorites technologies to work with are React, React Native, Graphql and Typescript.`;
 
 export type Filter = "42" | "side-projects" | "all";
 
@@ -30,7 +28,11 @@ const Index: React.FC<Props> = ({ allProjects }) => {
   };
 
   return (
-    <Layout title="Portfolio | Adrien Blanc" description={SEO_DESCRIPTION}>
+    <Layout>
+      <NextSeo
+        title="Portfolio | Adrien Blanc"
+        description="Software engineer based in Paris and currently studying at 42. My favorites technologies to work with are React, React Native, Graphql and Typescript."
+      />
       <AdrienBlanc idLeft="adrien" idRight="blanc" />
       <AboutMe {...{ filterProjects }} />
       <SocialsLink />

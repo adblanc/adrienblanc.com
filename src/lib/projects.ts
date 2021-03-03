@@ -66,7 +66,7 @@ export const getProjectData = (category: string, slug: string) => {
   };
 
   return {
-    data,
+    data: { ...data, category },
     source,
   };
 };

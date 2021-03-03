@@ -1,6 +1,8 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import hydrate from "next-mdx-remote/hydrate";
 import renderToString from "next-mdx-remote/render-to-string";
+import { NextSeo } from "next-seo";
+import Layout from "../../../components/Layout";
 import {
   getAllProjectsPaths,
   getProjectData,
@@ -16,17 +18,25 @@ const Project = ({ project, source }: Props) => {
   const content = hydrate(source);
 
   return (
-    <div className="flex items-center justify-center p-32">
-      <article className="prose lg:prose-lg xl:prose-xl">
-        <div>
-          <h1 className="text-center">{project.title}</h1>
-          <p className="text-center text-gray-500">
-            {project.tags.join(" | ")}
-          </p>
-        </div>
-        <div>{content}</div>
-      </article>
-    </div>
+    <Layout>
+      <NextSeo
+        title={`${project.title} ${
+          project.category === "42" ? " (42) " : ""
+        } | Adrien Blanc`}
+        description={project.description}
+      />
+      <div className="flex items-center justify-center p-32">
+        <article className="prose lg:prose-lg xl:prose-xl">
+          <div>
+            <h1 className="text-center">{project.title}</h1>
+            <p className="text-center text-gray-500">
+              {project.tags.join(" | ")}
+            </p>
+          </div>
+          <div>{content}</div>
+        </article>
+      </div>
+    </Layout>
   );
 };
 
