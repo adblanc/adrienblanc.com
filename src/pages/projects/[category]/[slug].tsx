@@ -17,7 +17,7 @@ const Project = ({ project, source }: Props) => {
 
   return (
     <div className="flex items-center justify-center p-32">
-      <article className="prose lg:prose-lg">
+      <article className="prose lg:prose-lg xl:prose-xl">
         <div>
           <h1 className="text-center">{project.title}</h1>
           <p className="text-center text-gray-500">
