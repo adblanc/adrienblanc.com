@@ -6,12 +6,55 @@ tags: ["C++", "Data structures"]
 img: /projects/ft-containers/logo.png
 ---
 
-## h2 Heading
+### About
 
-### h3 Heading
+The containers in C++ all have a very different usage. <br />
+To make sure I understand them all, let's re-implement them! <br />
+I had to implement using C++98 and with the help of [this reference](https://www.cplusplus.com/) the following containers :
 
-#### h4 Heading
+- List
+- Vector
+- Map
+- Stack
+- Queue
 
-##### h5 Heading
+I also made so bonuses containers:
 
-###### h6 Heading
+- Set
+- Multiset
+- Multimap
+
+Of course, STL (standard template library) is forbidden. <br />
+I was however allowed to use the STD (standard) library.
+
+### What I learned
+
+#### A bunch of data structures.
+
+Before this project, the only data structure that I experimented with was [singly linked list](https://en.wikipedia.org/wiki/Linked_list#Singly_linked_list). <br/>
+
+![Singly linked list](/projects/ft-containers/singly-linked-list.png)
+
+To implement the **List container**, I had to learn about [doubly circular linked
+list](https://en.wikipedia.org/wiki/Linked_list#Doubly_linked_list).
+
+![Circular doubly linked list](/projects/ft-containers/circular-doubly-linked-list.png)
+
+For the **Map container** , binary trees and more specifically [red black
+trees](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree).
+
+![Red black tree](/projects/ft-containers/red-black-tree.png)
+
+#### C++
+
+Re-implementing containers and their [iterators](https://www.cplusplus.com/reference/iterator/) demystified the STL and really increased my expertise in C++.
+
+#### Test driven development
+
+I made a **lot of unit tests** as there was **a bunch of functions** to test and tried my best to follow [TDD practices](https://en.wikipedia.org/wiki/Test-driven_development). <br/>
+I was a bit disappointed as I would have prefer to use a C++ testing library but it was forbidden by 42 subject so I used [assert](http://www.cplusplus.com/reference/cassert/assert/) and my tests were really redundant.
+
+### Notes
+
+Re-implementing existing containers wasn't meaningful to me so I found it to be boring sometimes.<br />
+However, I really enjoyed researching, learning **data structures** and making **TDD**.

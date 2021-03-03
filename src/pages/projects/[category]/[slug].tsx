@@ -26,7 +26,7 @@ const Project = ({ project, source }: Props) => {
         description={project.description}
       />
       <div className="flex items-center justify-center p-32">
-        <article className="prose lg:prose-lg xl:prose-xl">
+        <article className="prose lg:prose-lg">
           <div>
             <h1 className="text-center">{project.title}</h1>
             <p className="text-center text-gray-500">
