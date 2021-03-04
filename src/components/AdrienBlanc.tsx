@@ -4,6 +4,8 @@ import { animateSgv } from "../utils/svg";
 const idLeft = "adrien";
 const idRight = "blanc";
 
+const svgClass = "md:w-2/5 lg:w-1/3 xl:w-1/4";
+
 const getDelayByLength = (length: number) => {
   const totalDuration = 3000;
 
@@ -22,10 +24,10 @@ const AdrienBlanc: React.FC<unknown> = () => {
   const strokeColor = "#2d3748";
 
   return (
-    <div className="text-center w-full flex justify-center p-8">
+    <div className="text-center flex justify-center space-x-4 md:space-x-6">
       <svg
         id={idLeft}
-        className="mr-3 w-1/2 sm:w-1/3 lg:w-1/4 xl:w-1/5"
+        className={svgClass}
         viewBox="0 0 488 107"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +71,7 @@ const AdrienBlanc: React.FC<unknown> = () => {
       </svg>
       <svg
         id={idRight}
-        className="ml-3 w-1/2 sm:w-1/3 lg:w-1/4 xl:w-1/5"
+        className={svgClass}
         viewBox="0 0 448 109"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
