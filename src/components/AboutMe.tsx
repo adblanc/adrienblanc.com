@@ -18,7 +18,7 @@ export interface AboutMeProps {
 
 const AboutMe: React.FC<AboutMeProps> = ({ filterProjects }) => {
   return (
-    <section className="max-w-2xl px-4 mx-auto text-gray-800">
+    <section className="max-w-2xl px-4 mx-auto">
       <div className="mb-12 text-xl leading-relaxed">
         <span className="leading-normal font-bold text-2xl">
           Hi, my name is <h1 className="inline-block">Adrien</h1>
