@@ -9,6 +9,7 @@ export interface IProject {
   img: string;
   slug: string;
   category: string;
+  github?: string;
 }
 
 export const getAllProjects = async () => {
