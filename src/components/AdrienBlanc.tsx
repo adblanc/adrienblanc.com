@@ -4,7 +4,7 @@ import { animateSgv } from "../utils/svg";
 const idLeft = "adrien";
 const idRight = "blanc";
 
-const svgClass = "md:w-2/5 lg:w-1/3 xl:w-1/4";
+const svgClass = "w-32";
 
 const getDelayByLength = (length: number) => {
   const totalDuration = 3000;
@@ -24,7 +24,7 @@ const AdrienBlanc: React.FC<unknown> = () => {
   const strokeColor = "#2d3748";
 
   return (
-    <div className="text-center flex justify-center space-x-4 md:space-x-6">
+    <div className="text-center flex justify-center space-x-3">
       <svg
         id={idLeft}
         className={svgClass}
