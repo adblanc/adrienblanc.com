@@ -22,7 +22,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ filterProjects }) => {
       <div className="mb-12 text-xl leading-relaxed">
         <span className="leading-normal font-bold text-2xl">
           Hi, my name is <h1 className="inline-block">Adrien</h1>
-          <span aria-hidden> 🙂 </span>
+          <span aria-hidden> 🙂</span>
         </span>
         , I'm a software engineer based in Paris and currently studying at{" "}
         <Link href="https://www.42.fr/">42</Link>. I love to build{" "}
