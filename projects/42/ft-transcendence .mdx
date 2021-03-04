@@ -1,0 +1,60 @@
+---
+title: ft_transcendence
+description: Implementation of the various container types of the C++ standard template library.
+tags: ["C++", "Data structures"]
+
+img: /projects/ft-containers/logo.png
+---
+
+### About the project
+
+The containers in C++ all have a very different usage. <br />
+To make sure I understand them all, let's re-implement them! <br />
+I had to implement using C++98 and with the help of [this reference](https://www.cplusplus.com/) the following containers :
+
+- List
+- Vector
+- Map
+- Stack
+- Queue
+
+I also made so bonus containers:
+
+- Set
+- Multiset
+- Multimap
+
+Of course, STL (standard template library) is forbidden. <br />
+However STD (standard) library was allowed.
+
+### What I learned
+
+#### A bunch of data structures
+
+Before this project, the only data structure that I experimented with was [singly linked list](https://en.wikipedia.org/wiki/Linked_list#Singly_linked_list). <br/>
+
+![Singly linked list](/projects/ft-containers/singly-linked-list.png)
+
+In order to implement the **List container**, I had to learn about [doubly circular linked
+list](https://en.wikipedia.org/wiki/Linked_list#Doubly_linked_list).
+
+![Circular doubly linked list](/projects/ft-containers/circular-doubly-linked-list.png)
+
+For the **Map container** , binary trees and more specifically [red black
+trees](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree).
+
+![Red black tree](/projects/ft-containers/red-black-tree.png)
+
+#### C++
+
+Re-implementing containers and their [iterators](https://www.cplusplus.com/reference/iterator/) demystified the STL and really increased my expertise in C++.
+
+#### Test driven development
+
+I made a **lot of unit tests** as there was **a bunch of functions** to test and tried my best to follow [TDD practices](https://en.wikipedia.org/wiki/Test-driven_development). <br/>
+Unfortunately, it was forbidden in this project to use a C++ testing library, so in order to run my tests I had to use [assert](http://www.cplusplus.com/reference/cassert/assert/) which made the whole process really redundant (and painful).
+
+### Notes
+
+Re-implementing existing containers wasn't meaningful to me so I found it to be boring sometimes.<br />
+However, I really enjoyed researching, learning about **data structures** and making **TDD**.
