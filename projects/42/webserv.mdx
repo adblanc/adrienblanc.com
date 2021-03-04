@@ -9,26 +9,25 @@ img: /projects/ft-containers/logo.png
 ### About the project
 
 It was a **huge** group project and we were 2 working on it. <br />
-We had to build an HTTP 1.1 server conditionally compliant with the **HTTP RFC** [7230](https://tools.ietf.org/html/rfc7230) to [7235](https://tools.ietf.org/html/rfc7235). <br />
-Also, the server had to be [non blocking](https://en.wikipedia.org/wiki/Asynchronous_I/O), and written in **C++ 98**.
+We had to build a [non blocking](https://en.wikipedia.org/wiki/Asynchronous_I/O) HTTP 1.1 server, written in **C++ 98** and conditionally compliant with the **HTTP RFC** [7230](https://tools.ietf.org/html/rfc7230) to [7235](https://tools.ietf.org/html/rfc7235).
 
 ### What I learned
 
 #### Sockets
 
-Using a configuration file that we would parse, our server had to connect and listen on some specific ports. <br />
-I had already used sockets in a websocket protocol, for example using [socket.io](https://socket.io/) in Node.JS but this project was totally different. <br />
-We had to use low level C sockets functions and on the top of that sockets had to be non-blocking.
+Using a **configuration file** that we would parse, our server had to connect and listen on some specific ports. <br />
+Through a personal project, I had already used sockets in a websocket protocol, for example using [socket.io](https://socket.io/) in Node.JS but this project was totally different. <br />
+We had to use **low level C sockets functions** and on the top of that sockets had to be non-blocking.
 If you want to read more about these I'd **strongly** recommend [this website](http://dwise1.net/pgm/sockets/blocking.html).
 
 #### Hypertext TransferProtocol (HTTP)
 
-We had **a lot** of **HTTP headers** to implement, it allowed me to grasp the importance of each of them.
+We went through **a lot** of **HTTP headers** which allowed me to grasp the importance of each and every one of them.
 
 #### NGINX
 
 In the subject, **nginx** was considered HTTP 1.1 compliant and could be used to compare headers and answer behaviors. <br />
-In order to test our server, I had to dig in nginx documentation and to test their server as well. <br />
+In order to test our server, I dug in nginx documentation and tested their server as well. <br />
 Note also that **nginx source code** is written **in C** and publicly available on [github](https://github.com/nginx/nginx).
 
 #### CGI
