@@ -1,0 +1,51 @@
+---
+title: ft_transcendence
+description: Implementation of the various container types of the C++ standard template library.
+tags: ["Ruby on Rails", "Backbone.js", "PostgreSQL", "Docker", "Typescript"]
+
+img: /projects/ft-containers/logo.png
+---
+
+### About the project
+
+This was the last project of the common branch of my 42 cursus, we were a group of 4. <br />
+We had to build a [Single Page Application](https://en.wikipedia.org/wiki/Singlepage_application) using [Ruby on Rails (RoR)](https://rubyonrails.org/), [Backbone.JS](https://backbonejs.org/) and [PostgreSQL](https://www.postgresql.org/). <br />
+Users should be able to play the famous [pong game](https://en.wikipedia.org/wiki/Pong), have friends, guilds, chat with each other, and a bunch more features.
+
+### What I learned
+
+#### Ruby on Rails
+
+I had never written **ruby** nor used **Ruby on Rails** before and I loved it. <br />
+It **boosted my productivity** a lot because their is no need to write boilerplate and it does a lot for me. <br />
+However, setting the whole project up was kinda messy at first, especially to get [webpacker](https://github.com/rails/webpacker) to work nicely with everything else.
+
+#### Backbone.js
+
+Coming from [React.js](https://reactjs.org/), developing using **Backbone** was **hard**, **really hard**. <br />
+I had just so much more things to handle myself, managing views lifecycles, remove events, and so much more... <br />
+Nevertheless, it increased my **web knowledge** a lot.
+
+As I **love Typescript**, I had to try to fit it in and I did. <br />
+Looking back on it, I don't know if it was a good decision as in my group I was the only one with **javascript** and **typescript** knowledge. <br />
+Of course, **typescript** helped us a lot by providing **static analysis** on the codebase but it added complexity for my mates.
+Moreover, **99%** of backbone examples online were not using **ES6 classes**, and of course were written in javascript.
+
+#### OAuth
+
+I implemented **OAuth authentication** with **42 API**, and like it a lot. <br />
+The fact that you don't have to worry about storing the user password or even the create account logic is of great help.
+
+#### Websockets
+
+Ruby on Rails comes with a lovely library to handle websockets : **Action Cable**. <br />
+It has a **nice API** and allowed me to add real time update on the website. <br />
+I used it to build the **real time chat interface** but also for the **pong game** itself. <br />
+My previous experiences with websockets were limited and it was my first time building a chat.
+
+### Notes
+
+This was my biggest 42 project so far, I **loved it** but I do have some regrets :
+
+- not introducing unit and integration tests sooner
+- not taking enough time to choose my mates, out of our 4 people group, only 2 of us were really working on it so it was not cool nor motivating.
