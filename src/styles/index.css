@@ -13,6 +13,6 @@
     fill: transparent;
   }
   to {
-    fill: #2d3748;
+    fill: currentColor;
   }
 }

@@ -10,7 +10,9 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      borderColor: ["dark"],
+    },
   },
   plugins: [require("@tailwindcss/typography")],
 };

@@ -1,4 +1,5 @@
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 const Moon = () => (
   <svg
@@ -36,13 +37,25 @@ const Sun = () => (
 
 const DarkModeSwitch: React.FC<unknown> = () => {
   const { setTheme, theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
 
   const switchTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
+  // https://github.com/pacocoursey/next-themes#avoid-hydration-mismatch
+  if (!mounted) {
+    return <div className="w-6 h-6" />;
+  }
+
   return (
-    <button onClick={switchTheme}>
+    <button
+      className="focus:outline-none"
+      aria-label="Switch dark mode"
+      onClick={switchTheme}
+    >
       {theme === "dark" ? <Sun /> : <Moon />}
     </button>
   );
