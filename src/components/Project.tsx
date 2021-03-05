@@ -16,7 +16,7 @@ const Project: React.FC<ProjectProps> = ({
   data: { slug, title, img, tags, description },
 }) => {
   return (
-    <div className="bg-gray-300 border rounded-lg overflow-hidden group max-w-xs shadow-sm hover:shadow-lg transition-shadow ease-in-out duration-300">
+    <div className="bg-gray-300 dark:bg-gray-800 border rounded-lg overflow-hidden group max-w-xs shadow-sm hover:shadow-lg transition-shadow ease-in-out duration-300">
       <Link href={`/${slug}`}>
         <a>
           <div className="relative overflow-hidden">
@@ -29,7 +29,7 @@ const Project: React.FC<ProjectProps> = ({
           </div>
           <div className="p-4">
             <h3 className="font-semibold text-lg">{title}</h3>
-            <div className="text-gray-700 uppercase font-medium text-xs tracking-wide">
+            <div className="text-gray-700 dark:text-gray-400 uppercase font-medium text-xs tracking-wide">
               {tags.map(
                 (tag, i) => `${tag}${i !== tags.length - 1 ? ", " : ""}`
               )}

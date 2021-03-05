@@ -28,7 +28,7 @@ const Project = ({ project, source }: Props) => {
         description={project.description}
       />
       <div className="flex items-center justify-center">
-        <article className="prose lg:prose-lg border border-gray-500 rounded-md ">
+        <article className="prose dark:prose-dark lg:prose-lg border border-gray-500 rounded-md ">
           <div className="relative w-full h-full border-gray-600 border-2 rounded-md p-8 -top-2 left-2 bg-white">
             <div>
               <div className="flex flex-row">
