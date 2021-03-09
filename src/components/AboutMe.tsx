@@ -20,11 +20,11 @@ const AboutMe: React.FC<AboutMeProps> = ({ filterProjects }) => {
   return (
     <section className="max-w-2xl px-4 mx-auto">
       <div className="mb-12 text-xl leading-relaxed">
-        <span className="leading-normal font-bold text-2xl">
+        <div className="leading-normal font-bold text-4xl">
           Hi, my name is <h1 className="inline-block">Adrien</h1>
           <span aria-hidden> 🙂</span>
-        </span>
-        , I'm a software engineer based in Paris and currently studying at{" "}
+        </div>
+        I'm a software engineer based in Paris and currently studying at{" "}
         <Link href="https://www.42.fr/">42</Link>. I love to build{" "}
         <Link onClick={() => filterProjects("side-projects")}>
           side-projects
