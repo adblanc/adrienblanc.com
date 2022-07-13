@@ -7,6 +7,7 @@ import { useState } from "react";
 import ProjectFilters from "../components/ProjetFilters";
 import { NextSeo } from "next-seo";
 import AdrienBlanc from "../components/AdrienBlanc";
+import Link from "next/link";
 
 interface Props {
   allProjects: IProject[];
@@ -41,6 +42,11 @@ const Index: React.FC<Props> = ({ allProjects }) => {
         </h2>
         <ProjectFilters {...{ filterProjects, filter }} />
         <ProjectsList {...{ projects }} />
+      </section>
+      <section className="w-full flex justify-center items-center">
+        <Link href="/legal">
+        <a className="hover:underline text-center">Mentions légales</a>
+        </Link>
       </section>
     </>
   );

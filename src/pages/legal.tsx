@@ -22,7 +22,7 @@ const LegalPage = () => {
 
 	
 				<p>
-			Ce site est hébergé par la société <span className="font-semibold">Vercel Inc.</span>, située 340 S Lemon Ave #4133 Walnut, CA 91789, et joignable via <a className="hover:underline font-semibold" href="mailto:privacy@vercel.com">privacy@vercel.com</a>
+					Ce site est hébergé par la société <span className="font-semibold">Vercel Inc.</span>, située 340 S Lemon Ave #4133 Walnut, CA 91789, et joignable au (559) 288-7060
 				</p>
 		</>
 	)
