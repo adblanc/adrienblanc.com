@@ -2,7 +2,10 @@ export default function Home() {
   return (
     <div className="container mx-auto px-4 pt-16 pb-4">
       <h1 className="text-xl font-semibold">Hello 👋</h1>
-      <section className="mt-8">
+
+      <p className="mt-2">I&apos;m Adrien Blanc, a software engineer.</p>
+
+      <section className="mt-4">
         <h2 className="text-lg font-medium">• Projects :</h2>
         <ul className="mt-2 space-y-1 pl-4">
           <ProjectItem label="TOZ" href="https://www.toz-app.com/" />
