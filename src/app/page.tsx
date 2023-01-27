@@ -13,6 +13,10 @@ export default function Home() {
             label="Rendez-vous | Passeports et Cartes d'identités"
             href="https://cni-passeports-web.vercel.app/"
           />
+          <ProjectItem
+            label="Générateur de mentions légales"
+            href="https://legal-mentions-generator.vercel.app/"
+          />
         </ul>
       </section>
     </div>
