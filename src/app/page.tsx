@@ -11,7 +11,7 @@ export default function Home() {
           <ProjectItem label="TOZ" href="https://www.toz-app.com/" />
           <ProjectItem
             label="Rendez-vous | Passeports et Cartes d'identités"
-            href="https://cni-passeports-web.vercel.app/"
+            href="https://cni-passeports.fr/"
           />
           <ProjectItem
             label="Générateur de mentions légales"
